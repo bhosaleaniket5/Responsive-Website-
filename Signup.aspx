@@ -161,13 +161,13 @@
        
             <label class="col-xs-11">Password</label>
             <div class="col-xs-11">
-            <asp:TextBox ID="tbpassword" runat="server" Class="form-control" placeholder="Password"></asp:TextBox>
+            <asp:TextBox ID="tbpassword" runat="server" Class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
             </div>
         
 
             <label class="col-xs-11">Confirm Password</label>
             <div class="col-xs-11">
-            <asp:TextBox ID="tbconfirmpwd" runat="server" Class="form-control" placeholder="Confirm Password"></asp:TextBox>
+            <asp:TextBox ID="tbconfirmpwd" runat="server" Class="form-control" placeholder="Confirm Password" TextMode="Password"></asp:TextBox>
             </div>
       
 
@@ -181,11 +181,12 @@
        
             <label class="col-xs-11">Email</label>
             <div class="col-xs-11">
-            <asp:TextBox ID="tbemail" runat="server" Class="form-control" placeholder="Email"></asp:TextBox>
+            <asp:TextBox ID="tbemail" runat="server" Class="form-control" placeholder="Email" TextMode="Email"></asp:TextBox>
             </div>
          
             <div class="col-xs-11 space-vert">
-            <asp:Button ID="btsignup" Class="btn btn-success" runat="server" Text="Sign UP" />
+            <asp:Button ID="btSignup" Class="btn btn-success" runat="server" Text="Sign UP" OnClick="btSignup_Click"/>
+                <asp:Label ID="lblMsg" runat="server"></asp:Label>
             </div>   
            </div>
         </form>
